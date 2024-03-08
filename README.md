@@ -8,7 +8,7 @@
 | Créer le squelette du site  | En cours - 20% |
 | Créer le squelette de la page de gestion  | En attente |
 | Créer le PHP de la page de gestion | En attente |
-| Créer le CSS | En attente |
+| Créer le CSS | En cours - 05% |
 | Tester le site | En attente |
 | Choisir un hébergeur et un nom de domaine | En attente |
 | Publier le site | En attente |
