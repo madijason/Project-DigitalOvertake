@@ -15,3 +15,6 @@
 
 ## Avancement
 **Digital Overtake** version : 1.0.0 *Falcon* --> 5%
+
+## Visualisation du site (instable)
+https://html-preview.github.io/?url=https://github.com/madijason/Project-DigitalOvertake/blob/main/index.html
