@@ -1,0 +1,78 @@
+/* Utiliser la police Poppins pour l'ensemble du site */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Style pour centrer le navbar */
+#navbar {
+    background-color: #C1A1DB;
+    text-align: center;
+    padding: 10px; /* Réduire le padding */
+    height: 200px; /* Hauteur fixée */
+    box-sizing: border-box; /* Inclure les paddings dans la hauteur */
+}
+
+/* Style pour le titre */
+.title {
+    margin: 0;
+    font-size: 48px; /* Réduire la taille du titre */
+    color: #364958;
+    margin-bottom: 10px; /* Réduire l'espace entre le titre et le reste de la navbar */
+}
+
+/* Style pour le lien de navigation */
+#navbar a {
+    display: inline-block;
+    width: 150px; /* Réduire la largeur des liens */
+    height: 60px; /* Réduire la hauteur des liens */
+    margin: 0 5px; /* Réduire la marge entre les liens */
+    border-radius: 10px; /* Réduire le rayon de la bordure */
+    background-color: #3B6064;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px; /* Centrer verticalement le texte */
+    text-decoration: none;
+}
+
+/* Style pour le lien de navigation actif */
+#navbar a:hover {
+    display: inline-block;
+    width: 150px; /* Réduire la largeur des liens */
+    height: 60px; /* Réduire la hauteur des liens */
+    margin: 0 5px; /* Réduire la marge entre les liens */
+    border-radius: 10px; /* Réduire le rayon de la bordure */
+    background-color: #C9E4CA;
+    color: #3B6064;
+    text-align: center;
+    font-size: 24px;
+    line-height: 60px; /* Centrer verticalement le texte */
+    text-decoration: none;
+}
+
+/* Style pour le logo */
+#navbar img {
+    vertical-align: middle;
+}
+
+/* Style pour le contenu principal */
+#main {
+    display: flex;
+    width: 100%;
+}
+
+.col {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100px; /* Définir une hauteur fixe pour les colonnes */
+}
+
+#left {
+    background-color: #f0f0f0;
+}
+
+#right {
+    background-color: #e0e0e0;
+}
