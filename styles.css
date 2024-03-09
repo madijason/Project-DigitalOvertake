@@ -1,0 +1,180 @@
+/* Project : Maë On Track */
+/* Developer : Madi Jason */
+/* Version : 1.0.0 Falcon */
+
+/* Global styles */
+body {
+    margin: 0;
+    /* Warning : This font need a call in HTML */
+    font-family: 'Poppins', sans-serif;
+}
+
+#main {
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+/* Ribbons styles */
+.ribbon {
+    width: 50px;
+    padding: 0;
+    position: absolute;
+    background-color: #ff9800;
+    transform: rotate(20deg);
+    border-radius: 50px;
+    font-size: 12px;
+    color: black;
+}
+
+/* Cards styles */
+.card {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    background-color: #364958;
+    border-radius: 12px;
+    float: left;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.extended-card {
+    /*big card*/
+}
+
+.collapsed-card {
+    /*article*/
+}
+
+.short-card {
+    width: 100px;
+    height: 200px;
+    margin: 10px;
+    background-color: #364958;
+    border-radius: 12px;
+    float: left;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #C9E4CA;
+    cursor: pointer;
+}
+
+.extended-card:hover {
+    /*big card*/
+}
+
+.collapsed-card:hover {
+    /*article*/
+}
+
+.short-card:hover {
+    transform: scale(1.1);
+    background-color: #C9E4CA;
+    cursor: pointer;
+}
+
+/* Navigation bar style */
+#navbar {
+    padding: 10px;
+    height: 200px;
+    background-color: #C1A1DB;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#navbar a {
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    margin: 0 5px;
+    border-radius: 10px;
+    background-color: #3B6064;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar a:hover {
+    display: inline-block;
+    width: 150px;
+    height: 60px;
+    margin: 0 5px;
+    border-radius: 10px;
+    background-color: #C9E4CA;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #3B6064;
+}
+
+#navbar a.active {
+    background-color: #364958;
+}
+
+#navbar img {
+    vertical-align: middle;
+}
+
+#title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 48px;
+    color: #364958;
+}
+
+/* Home styles */
+.index {
+    display: flex;
+}
+
+.column {
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+/* TEMPORARY RESPONSIVE SECTION */
+@media screen and (max-width: 1000px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    #navbar a {
+        font-size: 12px;
+        height: 25px;
+        line-height: 25px;
+        width: 100px;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+
+    .column {
+        flex: none;
+    }
+
+    .card {
+        float: none;
+    }
+
+    .ribbon {
+        visibility: collapse;
+    }
+}

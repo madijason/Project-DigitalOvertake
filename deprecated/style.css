@@ -60,10 +60,6 @@ body {
     background-color: #364958;
 }
 
-#navbar img:hover {
-    
-}
-
 /* Style pour le contenu principal */
 #main {
     display: flex;
@@ -122,6 +118,18 @@ body {
     cursor: pointer; /* Change cursor to pointer */
 }
 
+.ribbon {
+    width: 50px;
+    font-size: 12px;
+    padding: 0px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50px;
+    transform: rotate(20deg);
+    background-color: #ff9800;
+    color: white;
+  }
+
 /* Media query pour afficher les liens verticalement uniquement si la taille est inférieure à 768px */
 /* Temporaire */
 @media screen and (max-width: 1000px) {
@@ -148,5 +156,9 @@ body {
 
     .big-card {
         float: none;
+    }
+
+    .ribbon {
+        visibility: collapse;
     }
 }
