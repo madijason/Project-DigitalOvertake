@@ -56,6 +56,14 @@ body {
     vertical-align: middle;
 }
 
+#navbar a.active {
+    background-color: #364958;
+}
+
+#navbar img:hover {
+    
+}
+
 /* Style pour le contenu principal */
 #main {
     display: flex;
@@ -64,7 +72,6 @@ body {
 }
 
 .col {
-    /*width: 50%;*/
     padding: 20px;
     box-sizing: border-box;
     flex: 1;
@@ -76,4 +83,70 @@ body {
 
 #right {
     background-color: #e0e0e0;
+}
+
+.cat {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    float: left;
+    height: 200px;
+    width: 100px;
+    background-color: #364958;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: scale(1.1); /* Grow the card */
+    background-color: #C9E4CA; /* Change the background color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.big-card {
+    float: left;
+    height: 200px;
+    width: 250px;
+    background-color: #364958;
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.big-card:hover {
+    transform: scale(1.1); /* Grow the card */
+    background-color: #C9E4CA; /* Change the background color */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Media query pour afficher les liens verticalement uniquement si la taille est inférieure à 768px */
+/* Temporaire */
+@media screen and (max-width: 1000px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+        height: auto; /* Annuler la hauteur fixe */
+    }
+
+    #navbar a {
+        font-size: 12px;
+        height: 25px;
+        line-height: 25px;
+        width: 100px;
+    }
+
+    #main {
+        flex-direction: column; /* Mettre les colonnes l'une en dessous de l'autre */
+    }
+
+    .col {
+        flex: none; /* Annuler la flexibilité pour forcer les colonnes à occuper la largeur disponible */
+    }
+
+    .big-card {
+        float: none;
+    }
 }
