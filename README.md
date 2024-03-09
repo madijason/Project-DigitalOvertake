@@ -5,16 +5,16 @@
 
 | Tâche | Status |
 | ------------- | ------------- |
-| Créer le squelette du site  | En cours - 12% |
+| Créer le squelette du site  | En cours - 15% |
 | Créer le squelette de la page de gestion  | En attente |
 | Créer le PHP de la page de gestion | En attente |
-| Créer le CSS | En cours - 7% |
+| Créer le CSS | En cours - 10% |
 | Tester le site | En attente |
 | Choisir un hébergeur et un nom de domaine | En attente |
 | Publier le site | En attente |
 
 ## Avancement
-**Digital Overtake** version : 1.0.0 *Falcon* --> 5%
+**Digital Overtake** version : 1.0.0 *Falcon* --> 7%
 
 ## Visualisation du site (instable)
 https://html-preview.github.io/?url=https://github.com/madijason/Project-DigitalOvertake/blob/main/index.html
