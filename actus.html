@@ -5,7 +5,7 @@
 <html lang="fr-fr">
     <head>
         <meta charset="utf-8" />
-        <title>Maë On Track - Infos</title>
+        <title>Maë On Track - Actus</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
@@ -15,23 +15,23 @@
         <div id="navbar">
             <h1 id="title">Maë On Track</h1>
             <a href="index.html">Accueil</a>
-            <a href="#infos" class="active" >Infos</a>
-            <a href="#actus">Actus</a>
+            <a href="#actus" class="active">Actus</a>
+            <a href="articles.html">Articles</a>
             <img alt="logo" src="images/logo.png" height="100px" width="100px"/>
-            <a href="#articles">Articles</a>
             <a href="#interviews">Interviews</a>
+            <a href="#about">A propos</a>
             <a class="pitcrew" href="#pitcrew">PitCrew</a>
         </div>       
         <div id="main">
             <div class="extended-card">
-                <div class="content">
+                <div class="content" onclick="goto('actus_detail.html')">
                     <h3>Titre</h3>
                     <p>Ceci est un bref aperçu du texte de l'info</p>
                 </div>
                 <img src="images/debug.png" alt="Une image" />
             </div>
             <div class="extended-card">
-                <div class="content">
+                <div class="content" onclick="goto('actus_detail.html')">
                     <h3>Titre</h3>
                     <p>Ceci est un bref aperçu du texte de l'info</p>
                 </div>
@@ -39,6 +39,13 @@
             </div>
         </div>
     </body>
+
+        <!-- TEMP -->
+        <script>
+            function goto(url) {
+                window.location.href = url;
+            }
+        </script>
 </html>
 
 <!-- <span class="ribbon">New</span> : Pillule de nouveauté -->
