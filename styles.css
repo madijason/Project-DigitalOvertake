@@ -67,10 +67,6 @@ body {
     margin-right: 10px;
 }
 
-.collapsed-card {
-    /*article*/
-}
-
 .short-card {
     width: 100px;
     height: 200px;
@@ -93,10 +89,6 @@ body {
     background-color: #C9E4CA;
     cursor: pointer;
     color: #364958;
-}
-
-.collapsed-card:hover {
-    /*article*/
 }
 
 .short-card:hover {
@@ -290,6 +282,15 @@ body {
 
 .article-text {
     padding: 0;
+}
+
+/* About styles */
+.about-title {
+    margin: 20px;
+    background-image: linear-gradient(to right, #3B6064, #C1A1DB);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 /* TEMPORARY RESPONSIVE SECTION */
