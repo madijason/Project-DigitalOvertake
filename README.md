@@ -7,6 +7,7 @@
 | ------------- | ------------- |
 | Créer le squelette du site  | En cours - 40% |
 | Créer le squelette de la page de gestion  | En attente |
+| Créer le PHP du site | En attente |
 | Créer le PHP de la page de gestion | En attente |
 | Créer le CSS | En cours - 25% |
 | Tester le site | En attente |
