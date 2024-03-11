@@ -1,0 +1,120 @@
+/* Project : Maë On Track */
+/* Developer : Madi Jason */
+/* Version : 1.0.0 Falcon */
+
+body {
+    margin: 0;
+    /* Warning : This font need a call in HTML */
+    font-family: 'Poppins', sans-serif;
+}
+
+.shared-screen {
+    display: flex;
+}
+
+.main-bar {
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.selection-div {
+    height: 215px;
+    background-color: #D1C4E9;
+}
+
+.content-list {
+    height: 800px;
+    background-color: #673AB7;
+}
+
+.window {
+    padding: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Import */
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 250px; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-top: 10px;
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+  }
+
+/* REIMPORT */
+/* Style pour le formulaire */
+form {
+    background-color: #D1C4E9;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Style pour le label */
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  /* Style pour la liste déroulante */
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+    background-size: 5px 5px, 5px 5px;
+    background-repeat: no-repeat;
+  }
+
+  /* Style pour les options de la liste déroulante */
+  option {
+    font-size: 16px;
+  }
+
+  /* Style pour le bouton */
+ button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
