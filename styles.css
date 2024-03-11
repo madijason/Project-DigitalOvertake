@@ -293,6 +293,15 @@ body {
     color: transparent;
 }
 
+/* Interview style */
+.interview-name {
+    background-image: linear-gradient(to right, #C9E4CA, #C1A1DB);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 25px;
+}
+
 /* TEMPORARY RESPONSIVE SECTION */
 @media screen and (max-width: 1000px) {
     #navbar {
