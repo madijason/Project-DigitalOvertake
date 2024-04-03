@@ -1,6 +1,17 @@
 <!-- Project : Maë On Track -->
 <!-- Developer : Madi Jason -->
 <!-- Version : 1.0.0 Falcon -->
+<?php
+    // Connect DB
+    try
+    {
+	    $mysqlClient = new PDO('mysql:host=localhost;dbname=digitalovertake;charset=utf8', 'root', '');
+    }
+    catch (Exception $e)
+    {
+        die('Erreur : ' . $e->getMessage());
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="fr-fr">
     <head>
