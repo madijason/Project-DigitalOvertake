@@ -5,7 +5,6 @@
 /* Global styles */
 body {
     margin: 0;
-    /* Warning : This font need a call in HTML */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -23,17 +22,21 @@ body {
 #navbar {
     padding: 10px;
     width: 100%;
-    height: 200px;
+    height: auto;
     background-color: #C1A1DB;
     text-align: center;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 #navbar a {
     display: inline-block;
     width: 150px;
     height: 60px;
-    margin: 0 5px;
+    margin: 5px;
     border-radius: 10px;
     background-color: #3B6064;
     text-align: center;
@@ -44,32 +47,12 @@ body {
 }
 
 #navbar a:hover {
-    display: inline-block;
-    width: 150px;
-    height: 60px;
-    margin: 0 5px;
-    border-radius: 10px;
     background-color: #C9E4CA;
-    text-align: center;
-    line-height: 60px;
-    font-size: 24px;
-    text-decoration: none;
     color: #3B6064;
 }
 
 #navbar a.active {
     background-color: #364958;
-}
-
-#navbar img {
-    vertical-align: middle;
-}
-
-#title {
-    margin: 0;
-    margin-bottom: 10px;
-    font-size: 48px;
-    color: #364958;
 }
 
 /* Ribbons styles */
@@ -82,19 +65,21 @@ body {
     border-radius: 50px;
     font-size: 12px;
     color: black;
+    visibility: visible;
 }
 
 /* Cards styles */
 .card {
-    width: 250px;
+    width: calc(33.33% - 20px);
     height: 200px;
     margin: 10px;
     padding: 4px;
     background-color: #364958;
     border-radius: 12px;
-    float: left;
+    display: inline-block;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     color: #C9E4CA;
+    vertical-align: top;
 }
 
 .extended-card {
@@ -134,20 +119,8 @@ body {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.card:hover {
-    transform: scale(1.1);
-    background-color: #C9E4CA;
-    cursor: pointer;
-    color: #364958;
-}
-
-.extended-card:hover {
-    transform: scale(1.01);
-    background-color: #C9E4CA;
-    cursor: pointer;
-    color: #364958;
-}
-
+.card:hover,
+.extended-card:hover,
 .short-card:hover {
     transform: scale(1.1);
     background-color: #C9E4CA;
@@ -156,13 +129,14 @@ body {
 
 /* Home styles */
 .index {
-    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .column {
     padding: 20px;
-    flex: 1;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .section {
@@ -222,14 +196,7 @@ body {
 }
 
 #articles-navbar a:hover {
-    display: inline-block;
-    width: 150px;
-    margin: 0 5px;
-    border-radius: 10px;
     background-color: #364958;
-    text-align: center;
-    font-size: 20px;
-    text-decoration: none;
     color: white;
 }
 
@@ -260,13 +227,7 @@ body {
 }
 
 #brand-navbar a:hover {
-    display: inline-block;
-    width: 150px;
-    border-radius: 10px;
     background-color: #3B6064;
-    text-align: center;
-    font-size: 20px;
-    text-decoration: none;
     color: white;
 }
 
@@ -302,34 +263,28 @@ body {
     font-size: 25px;
 }
 
-/* TEMPORARY RESPONSIVE SECTION */
-@media screen and (max-width: 1000px) {
-    #navbar {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    #navbar a {
-        font-size: 12px;
-        height: 25px;
-        line-height: 25px;
-        width: 100px;
-    }
-
+/* Responsive Section */
+@media screen and (max-width: 1200px) {
     #main {
+        margin-top: 60px;
+        padding-bottom: 60px;
+        overflow-y: auto;
+    }
+
+    .index {
         flex-direction: column;
     }
 
     .column {
-        flex: none;
+        width: 100%;
     }
 
-    .card {
-        float: none;
+    .section {
+        margin-bottom: 20px;
     }
 
-    .ribbon {
-        visibility: collapse;
+    .card,
+    .short-card {
+        width: 100%;
     }
 }
