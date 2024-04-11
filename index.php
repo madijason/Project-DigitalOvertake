@@ -74,41 +74,69 @@ try {
         <div class="column">
             <div class="section">
                 <h1>Dernières publications</h1>
-                <div class="card"></div>
+                <div class="main_i">
+                    <?php
+                    try {
+                        // Deuxième requête SQL
+                        $query_recommendations_details = $pdo->prepare('
+                                SELECT r.id, r.reco_id, r.category, i.id AS interview_id, i.title 
+                                FROM recommendations r
+                                INNER JOIN interviews i ON r.reco_id = i.id
+                                ');
+                        $query_recommendations_details->execute();
+                        $results = $query_recommendations_details->fetchAll(PDO::FETCH_ASSOC);
+
+                        foreach ($results as $result) {
+
+                            echo '<div class="card">';
+                            echo '<p style="flex: 1; margin: 0; padding: 10px; font-weight: bold; font-size: 24px;">' . $result['title'] . '</p>';
+                            echo '</div>';
+                        }
+                    } catch (Exception $e) {
+                        die('Erreur : ' . $e->getMessage());
+                    }
+                    ?>
+                </div>
             </div>
             <div class="section">
                 <h1>Formats courts</h1>
-                <div class="short-card"></div>
+                <div class="main_i">
+                    <div class="short-card"></div>
+                </div>
             </div>
         </div>
         <div class="column">
             <div class="section">
                 <h1>Format longs</h1>
-                <div class="card"></div>
+                <div class="main_i">
+                    <div class="card"></div>
+                </div>
             </div>
             <div class="section">
                 <h1>Recommandations</h1>
-                <?php
-                try {
-                    // Deuxième requête SQL
-                    $query_recommendations_details = $pdo->prepare('
-                            SELECT r.id, r.reco_id, r.category, i.id AS interview_id, i.title 
-                            FROM recommendations r
-                            INNER JOIN interviews i ON r.reco_id = i.id
-                            ');
-                    $query_recommendations_details->execute();
-                    $results = $query_recommendations_details->fetchAll(PDO::FETCH_ASSOC);
+                <div class="main_i">
+                    <?php
+                    try {
+                        // Deuxième requête SQL
+                        $query_recommendations_details = $pdo->prepare('
+                                SELECT r.id, r.reco_id, r.category, i.id AS interview_id, i.title 
+                                FROM recommendations r
+                                INNER JOIN interviews i ON r.reco_id = i.id
+                                ');
+                        $query_recommendations_details->execute();
+                        $results = $query_recommendations_details->fetchAll(PDO::FETCH_ASSOC);
 
-                    foreach ($results as $result) {
+                        foreach ($results as $result) {
 
-                        echo '<div class="card">';
-                        echo '<p style="flex: 1; margin: 0; padding: 10px; font-weight: bold; font-size: 24px;">' . $result['title'] . '</p>';
-                        echo '</div>';
+                            echo '<div class="card">';
+                            echo '<p style="flex: 1; margin: 0; padding: 10px; font-weight: bold; font-size: 24px;">' . $result['title'] . '</p>';
+                            echo '</div>';
+                        }
+                    } catch (Exception $e) {
+                        die('Erreur : ' . $e->getMessage());
                     }
-                } catch (Exception $e) {
-                    die('Erreur : ' . $e->getMessage());
-                }
-                ?>
+                    ?>
+                </div>
                 <!-- <span class="ribbon">New</span> -->
             </div>
         </div>
